@@ -1,0 +1,16 @@
+<?php
+
+    $messsage = $_POST["message"];
+
+    $files = scandir("./messages");
+    $num_files = count($files) - 2;
+
+    $fileName = "msg-{$num_files}.txt";
+
+    $file = fopen("./messages/{$fileName}", "x");
+
+    fwrite($file, $messsage);
+
+    fclose($file);
+
+    header("Location: index.php");  
