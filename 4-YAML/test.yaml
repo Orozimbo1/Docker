@@ -1,0 +1,50 @@
+# Instruções para o programa 
+nome: "Matheus"
+idade: 24
+
+# Este objeto descreve o nosso projeto
+objeto:
+  versao: 2
+  arquivo: "teste.txt"
+
+versao: 2
+versao_completa: 3.14
+
+# Tipos de strings em YAML
+string_sem_aspas: Este e um texto valido em YAML
+string_com_aspas: "Este tambem e um texto valido em YAML"
+
+# Valores nulos em YAML
+
+nulo: ~ # Retorna None
+nulo_dois: null # Retorna None
+
+# Valores booleanos em YAML
+
+verdadeiro: True # Retorna True
+verdadeiro_dois: On # Retorna True
+
+falso: False # Retorna False
+falso_dois: Off # Retorna False
+
+# Lista ou Array em YAML
+
+lista: [1,2,3,4,5]
+
+lista_dois: 
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+
+# Dicionario ou Objeto em YAML
+
+obj: {a: 1, b: 2, c: 3, objeto_interno: {a: 1}}
+
+obj_dois:
+  a: 1
+  b: 2
+  c: 3
+  objeto_interno:
+    a: 1
