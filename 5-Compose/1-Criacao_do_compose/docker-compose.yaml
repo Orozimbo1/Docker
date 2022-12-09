@@ -1,7 +1,7 @@
 version: '3.3'
 
 services:
-  db: # Container de Postgres
+  db: # Container de MySQL
     image: mysql:5.7 # FROM mysql
     volumes:
       - db_data:/var/lib/mysql
